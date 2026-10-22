@@ -1,0 +1,55 @@
+1.
+
+Class: A blueprint for big, complex changes that affect the original object directly.
+
+Struct: A simple box for tiny pieces of data that makes a brand-new copy every time.
+
+Interface: A rulebook or checklist.
+
+Enum: A list of fixed, named options to pick from (like Days of the Week or Game Difficulty: Easy, Medium, Hard).
+
+Main Method: The starting line where a program starts running its very first line of code.
+
+
+
+2.
+
+int number;
+char oneCharacter;
+
+number = 20;
+oneCharacter = 'h';
+
+Console.WriteLine(number);
+Console.WriteLine(oneCharacter);
+
+
+
+3.
+
+float myFloat = 10_000_000F;
+double myDouble = 10.12345675646846967988798686986986999;
+decimal myDecimal = 10.12345675646846967988798686986986999m;
+
+Console.WriteLine(myFloat);
+Console.WriteLine(myDouble);
+Console.WriteLine(myDecimal);
+
+
+
+4.
+
+Console.WriteLine($"{myDecimal:c}");
+
+CultureInfo myCulture = new CultureInfo("ar-EG");
+Console.WriteLine(myDecimal.ToString(myCulture));
+
+
+
+5.
+
+float fSum = 0.1f + 0.2f;
+Console.WriteLine(fSum);
+
+decimal dSum = 0.1m + 0.2m;
+Console.WriteLine(dSum);
