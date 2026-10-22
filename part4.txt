@@ -1,0 +1,40 @@
+13.
+
+Console.WriteLine("enter a number: ");
+
+string input = Console.ReadLine();
+
+int number = int.Parse(input);
+
+Console.Write("your number is " + number);
+
+
+
+14.
+
+string text = "12ab";
+int number = int.Parse(text); // error
+
+string text = null;
+int number = Convert.ToInt32(text); 
+Console.WriteLine(number); // 0
+
+
+
+15.
+
+Casting: Converts between compatible numeric or object types at the language level, risking silent truncation or overflow if unchecked.
+
+int a = (int)5.5l;
+
+Parse: Strictly converts a string to a specific type, throwing an immediate runtime exception if the input is invalid or null.
+
+int b = int.Parse("123");
+
+Convert: A utility method for type conversions that gracefully handles null strings by returning default values like 0.
+
+int c = Convert.ToInt32(null);
+
+TryParse: The safest string conversion method for untrusted data, returning a boolean (true/false) instead of throwing exceptions.
+
+bool ok = int.TryParse("12ab", out int d);
