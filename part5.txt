@@ -1,0 +1,32 @@
+16.
+
+Console.WriteLine("day? ");
+int day = int.Parse(Console.ReadLine());
+
+Console.WriteLine("month? ");
+int month = int.Parse(Console.ReadLine());
+
+Console.WriteLine("year? ");
+int year = inr.Parse(Console.ReadLine());
+
+Console.WriteLine();// blank line for spacing
+
+Console.WriteLine("Today's date: " + day + " , " + month + " , " + year);
+Console.WriteLine("Today's date: " + day + " / " + month + " / " + year);
+Console.WriteLine("Today's date: " + day + " - " + month + " - " + year);
+
+
+
+17.
+
+// single-line comment
+
+/*
+  multi-line
+  comment
+*/
+
+/// <summary>Adds two integers together.</summary>
+/// <param name="x">The first integer to add.</param>
+/// <param name="y">The second integer to add.</param>
+/// <returns>The sum of the two integers.</returns>
