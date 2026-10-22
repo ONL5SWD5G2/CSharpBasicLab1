@@ -1,0 +1,41 @@
+6.
+
+int x;
+Console.WriteLine(x); // error
+
+x = 1;
+y = x;
+
+y = 2;
+
+Console.WriteLine(x); // 1
+Console.WriteLine(y); // 2
+
+
+
+7.
+
+class Point
+{
+	public int x;
+	public int y;
+}
+
+Point p1;
+Console.WriteLine(p1.x); // error
+
+p1 = new Point { x = 10, y = 20 };
+Console.WriteLine(p1.x);
+Console.WriteLine(p1.y);
+
+
+
+8.
+
+Point p2 = new Point { x = 30, y = 40 };
+Point p3 = p2;
+
+p3.x = 50;
+
+Console.WriteLine(p2.x); // 50
+Console.WriteLine(p3.x); // 50
