@@ -1,0 +1,58 @@
+9.
+
+int myInt = 2147483647;
+long myLong = myInt;
+
+Console.WriteLine(myInt);
+Console.WriteLine(myLong);
+
+It requires no cast operator because long has a larger storage capacity than int, meaning it guarantees zero loss of data.
+
+
+
+10.
+
+long myLong = 10l;
+int myInt = (int)myLong;
+
+Console.WriteLine(myInt);
+
+long myLong = 1000000000000000l;
+int myInt = (int)myLong;
+
+Console.WriteLine(myInt);
+
+// int myInt = myLong; // Error!
+
+
+
+11.
+
+unchecked
+{
+	int myInt = (int)myLong;
+	Console.WriteLine(myInt);
+}
+
+checked
+{
+	int myInt = (int)myLong; 
+	Console.WriteLine(myInt);
+}
+
+
+
+12.
+
+long k = 1000000000000000l; 
+
+if (k > int.MaxValue || k < int.MinValue)
+{
+	Console.WriteLine("exception");
+}
+
+else
+{
+	int safeInt = (int)k;
+	Console.WriteLine(myInt);
+}
